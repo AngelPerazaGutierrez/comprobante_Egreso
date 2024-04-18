@@ -19,17 +19,26 @@
         <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
       </noscript>
       <nav class="navbar fixed-top" id="barra">
-        <div class="container-fluid">
+        <div class="container-fluid">          
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">          
+          <span class="navbar-toggler-icon"></span>
           </button>
-          <div>
-            <span class="material-symbols-outlined">
-              support_agent
-            </span>
-            <a class="navbar-brand" href="#">Soporte</a>
+          <div class="container">
+            <div class="row">
+              <div class="col-10">
+                <a href="#">Home</a>|
+                <a href="">About</a>|             
+              </div>
+              <div class="col-2">
+                <span class="material-symbols-outlined">
+                  support_agent
+                </span>
+                <a class="navbar-brand" href="">Soporte</a>
+              </div>
+            </div>
           </div>
+  
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu principal</h5>
@@ -63,7 +72,7 @@
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
               </form>
             </div>
-          </div>
+          </div>          
         </div>
       </nav>
     </header>

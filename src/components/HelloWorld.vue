@@ -1,11 +1,16 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <h1>Consultar egresos</h1>
+    <div class="row align-items-start">
+      <div class="col-5">
+        <h1>
+          Realizar Egresos
+        </h1>
       </div>
-      <div class="col-6">
-        <h1> egresos del dia</h1>
+      <div class="col-1">
+        
+      </div>
+      <div class="col-5">
+        <h1> Consultar Egresos</h1>
       </div>
     </div>
 
@@ -26,5 +31,8 @@ export default {
 <style scoped>
   .home {
     background-color: rebeccapurple;
+  }
+  .col-5 {
+    border: 2px solid;
   }
 </style>
