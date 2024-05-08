@@ -1,12 +1,9 @@
 <template>
-  <nav>  
-     <router-link to="/">Home</router-link> |
-     <router-link to="/about">About</router-link>|
-     <router-link to="/crear_egreso">Crear_Egreso</router-link>|     
-     <router-link to="/ver_egresos">Ver_Egresos</router-link>|     
-  </nav>
+  
   <router-view/>
+    
 </template>
+
 
 <style>
 #app {
@@ -35,7 +32,3 @@ nav a {
   color: #42b983;
 } */
 </style>
-
-<script>
-
-</script>
