@@ -1,42 +1,43 @@
 <template>
   <div class="container">
-      <div class="row d-flex justify-content-end ">
-        <div class="componentes card-body p-1
-        " v-for="(trabajo, index) in trabajos" :key="index">
-          <div class="">
-            <div class="row align-items-center">
-              <div class="col-3">
-                <div>
-                  <p><strong>CCP N° </strong>{{ trabajo.id }} <strong>Fecha: </strong>{{ trabajo.fecha }}</p>                
-                </div>
-              </div>            
-              <div class="col-7">
-                <p class="text-truncated"><strong>Descripcion: </strong>{{ trabajo.concepto }}</p>
+    <div class="row d-flex justify-content-end ">
+      <div class="componentes card-body p-1
+      " v-for="(trabajo, index) in trabajos" :key="index">
+        <div class="">
+          <div class="row align-items-center">
+            <div class="col-3">
+              <div>
+                <p><strong>CCP N° </strong>{{ trabajo.id }} <strong>Fecha: </strong>{{ trabajo.fecha }}</p>                
               </div>
-              <div class="col-2"><strong>Ciudad: </strong>{{ trabajo.ciudad }}</div>
+            </div>            
+            <div class="col-7">
+              <p class="text-truncated"><strong>Descripcion: </strong>{{ trabajo.concepto }}</p>
             </div>
-  
-            <div class="row flex-column flex-md-row text-truncated" style="font-size: 0.9em;">
-              <div class="col-3">
-                <div>
-                  <p><strong>{{ trabajo.tercero }}</strong> {{ trabajo.nit }} </p>                
-                </div>
+            <div class="col-2"><strong>Ciudad: </strong>{{ trabajo.ciudad }}</div>
+          </div>
+
+          <div class="row flex-column flex-md-row text-truncated" style="font-size: 0.9em;">
+            <div class="col-3">
+              <div>
+                <p><strong>{{ trabajo.tercero }}</strong> {{ trabajo.nit }} </p>                
               </div>
-              <div class="col-4">
-                <div >
-                  <p>
-                    Valor Pagado: <strong> {{ trabajo.valor }}</strong>
-                  </p>
-                </div>
-              </div>
-              
-              <div class="col-5"><Strong>Banco: </Strong>{{ trabajo.banco }} <Strong>Cuenta: </Strong> {{ trabajo.tipo_cuenta}} <Strong>Numero: </Strong> {{ trabajo.numero_cuenta }}</div>            
             </div>
+            <div class="col-4">
+              <div >
+                <p>
+                  Valor Pagado: <strong> {{ trabajo.valor }}</strong>
+                </p>
+              </div>
+            </div>
+            
+            <div class="col-5"><Strong>Banco: </Strong>{{ trabajo.banco }} <Strong>Cuenta: </Strong> {{ trabajo.tipo_cuenta}} <Strong>Numero: </Strong> {{ trabajo.numero_cuenta }}</div>            
           </div>
         </div>
-  
       </div>
+
     </div>
+  </div>
+
 </template>
 <script>
 
@@ -44,8 +45,7 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }, 
-  data() {
+  },data() {
       return {
         trabajos: [{
           id: 1,
@@ -117,63 +117,16 @@ export default {
           tipo_cuenta: 'Ahorros',
           numero_cuenta: '0236558',
           valor: '58899662'
-        },
-        { 
-          id: 7,
-          fecha: '2024-02-24',
-          ciudad: 'Bogotá',
-          nit: '830060553',
-          tercero: 'SERVIENTREGA',
-          concepto: 'pago de nomina 1 quincena marzo',
-          banco: 'BOGOTA',
-          tipo_cuenta: 'Ahorros',
-          numero_cuenta: '0236558',
-          valor: '58899662'
-        },
-        { 
-          id: 8,
-          fecha: '2024-02-24',
-          ciudad: 'Bogotá',
-          nit: '830060553',
-          tercero: 'SERVIENTREGA',
-          concepto: 'pago de nomina 1 quincena marzo',
-          banco: 'BOGOTA',
-          tipo_cuenta: 'Ahorros',
-          numero_cuenta: '0236558',
-          valor: '58899662'
-        },
-        { 
-          id: 9,
-          fecha: '2024-02-24',
-          ciudad: 'Bogotá',
-          nit: '830060553',
-          tercero: 'SERVIENTREGA',
-          concepto: 'pago de nomina 1 quincena marzo',
-          banco: 'BOGOTA',
-          tipo_cuenta: 'Ahorros',
-          numero_cuenta: '0236558',
-          valor: '58899662'
-        },
-        { 
-          id: 10,
-          fecha: '2024-02-24',
-          ciudad: 'Bogotá',
-          nit: '830060553',
-          tercero: 'SERVIENTREGA',
-          concepto: 'pago de nomina 1 quincena marzo',
-          banco: 'BOGOTA',
-          tipo_cuenta: 'Ahorros',
-          numero_cuenta: '0236558',
-          valor: '58899662'
         }
         ]
       }
     }
-  }
-  </script>
-  
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
-  <style>
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+
+<style>
   .componentes {
   
     border: solid 1px rgb(189, 188, 188);
@@ -198,4 +151,5 @@ export default {
     padding-left: 0;
     padding-right: 0;
   }
-  </style>
+  
+</style>

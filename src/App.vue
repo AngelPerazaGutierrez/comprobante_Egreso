@@ -7,7 +7,9 @@
      
   </nav>
   <router-view/>
+    
 </template>
+
 
 <style>
 #app {
@@ -34,7 +36,3 @@ nav a {
 }
 
 </style>
-
-<script>
-
-</script>
