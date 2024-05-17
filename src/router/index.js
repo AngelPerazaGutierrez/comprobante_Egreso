@@ -11,22 +11,18 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import('../views/AboutView.vue')
   },
   {
     path: '/crear_egreso',
-    name: 'crear_egreso',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "crear_egreso" */ '../views/CrearEgresoView.vue')
-  }
-  
-
-  
+    name: 'crear_egreso',    
+    component: () => import('../views/CrearEgresoView.vue')
+  },
+  {
+    path: '/login',
+    name: 'login',   
+    component: () => import('../views/LoginFormView.vue')
+  } 
  
 ]
 

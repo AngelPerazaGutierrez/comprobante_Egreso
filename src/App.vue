@@ -1,9 +1,10 @@
 <template>
   <nav>  
-     <router-link to="/">Home</router-link> |
-     <router-link to="/about">About</router-link>|
-     <router-link to="/crear_egreso">Crear_Egreso</router-link>|     
-     <router-link to="/ver_egresos">Ver_Egresos</router-link>|     
+     <router-link to="/"></router-link> 
+     <router-link to="/about"></router-link>
+     <router-link to="/crear_egreso"></router-link>
+     <router-link to="/login"></router-link>
+     
   </nav>
   <router-view/>
 </template>
@@ -13,6 +14,7 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: 4rem;
   text-align: center;
   color: #2c3e50;
 }
@@ -31,9 +33,6 @@ nav a {
   color: #2c3e50;
 }
 
-/* nav a.router-link-exact-active {
-  color: #42b983;
-} */
 </style>
 
 <script>
