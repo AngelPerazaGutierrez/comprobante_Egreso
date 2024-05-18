@@ -1,0 +1,54 @@
+
+.offcanvas-start {
+    right: auto;
+    /* Cambiamos la propiedad right a auto */
+    left: -100%;
+    /* Posicionamos el offcanvas hacia la izquierda */
+    transform: translateX(0);
+    /* Aplicamos una transformación para deslizar el offcanvas desde la izquierda */
+    transition: transform 0.3s ease;
+    /* Añadimos una transición para suavizar el movimiento */
+  }
+  
+  .crear-egreso {
+    width: 100%;
+  }
+  
+  .crear_egreso_button {
+    background: rgb(133, 248, 210);
+    font-weight: bolder;
+  }
+  
+  .crear_egreso_button:hover {
+    background: rgb(26, 228, 161);
+    font-weight: bolder;
+  }
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #barra {
+    background-color: #d0d0d0;
+  }
+  .footer {
+    background-color: #bababa;   
+    color: #171717;    
+    text-align: center;   
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    padding-top: 2px;
+  }
+   
+
+ 
